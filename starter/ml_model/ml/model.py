@@ -120,11 +120,11 @@ def load_model(model_path, encoder_path, labeler_path):
     Returns:
         tuple: A tuple containing the loaded model object, encoder object, and labeler object.
     """
-    model = pickle.load(open(model_path), 'rb')
+    model = pickle.load(open(model_path, 'rb'))
     
-    encoder = pickle.load(open(encoder_path), 'rb')
+    encoder = pickle.load(open(encoder_path, 'rb'))
 
-    lb = pickle.load(open(labeler_path), 'rb')
+    lb = pickle.load(open(labeler_path, 'rb'))
 
     return model, encoder, lb
 

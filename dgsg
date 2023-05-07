@@ -1,0 +1,38 @@
+[33mcommit 097e732e06e8dc4349be24066aba839e1e27b011[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: 1ba001e c8f53ce
+Author: IKERLAN\ADeLaPuente <adelapuente@ikerlan.es>
+Date:   Sun May 7 14:35:40 2023 +0200
+
+    Merge branch 'main' of https://github.com/alexdlp/Udacity_mlops_project3
+
+[33mcommit 1ba001e7ff42e54f7e4a341ec9760b319db5b17a[m
+Author: IKERLAN\ADeLaPuente <adelapuente@ikerlan.es>
+Date:   Sun May 7 14:32:44 2023 +0200
+
+    3 tests added to test data and model
+
+[33mcommit c8f53ceec4984b091e19cedfdd5d41a886035d63[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: AlexDLP <68698901+alexdlp@users.noreply.github.com>
+Date:   Sun May 7 14:31:57 2023 +0200
+
+    Created python-app.yml
+    
+    Runs pytest and flake8 automatically
+
+[33mcommit 30dedc8b63d6faf87cbd6e27419c17bee61b7a70[m
+Author: IKERLAN\ADeLaPuente <adelapuente@ikerlan.es>
+Date:   Sun May 7 13:43:10 2023 +0200
+
+    script for creating ml model finished and model created
+
+[33mcommit 74461eb78eafe50e1aa4acc8ba2a8e031d5c828e[m
+Author: IKERLAN\ADeLaPuente <adelapuente@ikerlan.es>
+Date:   Sun May 7 13:20:12 2023 +0200
+
+    data cleaned and tracked with dvc
+
+[33mcommit 2431c6cde44798a240d4cf4d43a697c5edeeb980[m
+Author: AlexDLP <68698901+alexdlp@users.noreply.github.com>
+Date:   Sun May 7 12:48:19 2023 +0200
+
+    Initial commit

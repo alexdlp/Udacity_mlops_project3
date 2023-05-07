@@ -1,15 +1,20 @@
 import pytest
 import pandas as pd
 import pickle
-from ml_model.ml.data import process_data
 from sklearn.model_selection import train_test_split
+import os
+
+from ml_model.ml.data import process_data
+
 
 
 @pytest.fixture(scope='session')
 def data():
+    print(os.getcwd())
 
-    data_path = './ml_model/data/census.csv'
+    data_path = "starter/ml_model/data/census.csv"
     df = pd.read_csv(data_path)
+    print(df)
 
     return df
 
@@ -42,8 +47,8 @@ def features():
 @pytest.fixture(scope='session')
 def model():
 
-    model_path = './ml_model/model/model.pkl'
-    model = pickle.load(open(model_path), 'rb')
+    model_path = 'starter/ml_model/model/model.pkl'
+    model = pickle.load(open(model_path, 'rb'))
 
     return model
 
@@ -70,29 +75,3 @@ def dataset_split(data, cat_features):
     return X_train, y_train, X_test, y_test
 
 
-@pytest.fixture(scope='session')
-def kl_threshold(request):
-    kl_threshold = request.config.option.kl_threshold
-
-    if kl_threshold is None:
-        pytest.fail("You must provide a threshold for the KL test")
-
-    return float(kl_threshold)
-
-@pytest.fixture(scope='session')
-def min_price(request):
-    min_price = request.config.option.min_price
-
-    if min_price is None:
-        pytest.fail("You must provide min_price")
-
-    return float(min_price)
-
-@pytest.fixture(scope='session')
-def max_price(request):
-    max_price = request.config.option.max_price
-
-    if max_price is None:
-        pytest.fail("You must provide max_price")
-
-    return float(max_price)

@@ -1,5 +1,8 @@
 
 import logging
+import pandas as pd
+import os
+
 
 def test_data_shape(data):
     """
@@ -36,7 +39,7 @@ def test_model(model, dataset_split):
     try:
         X_train, y_train, X_test, y_test = dataset_split
         preds = model.predict(X_test)
-        assert preds.shape[0] == X_test.shape[1]
+        assert preds.shape[0] == X_test.shape[0]
 
     except Exception as err:
         logging.error(
