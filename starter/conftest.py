@@ -12,7 +12,7 @@ from ml_model.ml.data import process_data
 def data():
     print(os.getcwd())
 
-    data_path = "starter/ml_model/data/census.csv"
+    data_path = "./starter/ml_model/data/census.csv"
     df = pd.read_csv(data_path)
     print(df)
 
